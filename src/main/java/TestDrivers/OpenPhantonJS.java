@@ -6,14 +6,17 @@ import org.openqa.selenium.phantomjs.PhantomJSDriver;
 public class OpenPhantonJS {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
 
-		// Instanciando el WebDriver
+		// Variables para usar el binario
+		String DriverNavegador = "phantomjs.binary.path";
+		String RutaDriver = "C:\\Rene\\Binarios\\PhantomJS\\phantomjs-2.1.1\\bin\\phantomjs.exe";
+		String url ="https://www.udemy.com/";
+
+		//  Imstanciando el Driver
 		WebDriver driver;
-		
-		// Ruta del binario
-		System.setProperty("phantomjs.binary.path", "C:\\Rene\\Binarios\\PhantomJS\\phantomjs-2.1.1\\bin\\phantomjs.exe");
-		
+		// Definiendo el Driver y su ruta para el driver		
+		System.setProperty(DriverNavegador, RutaDriver);
+		// Definiendo que Navegador usaremos		
 		driver  = new PhantomJSDriver();
 		
 		System.out.println("Se abrio en navegador");
