@@ -10,7 +10,7 @@ public class OpenIE {
 
 		// Variables para usar el binario
 		String DriverNavegador = "webdriver.ie.driver";
-		String RutaDriver = "C:\\Rene\\Binarios\\ChromeDirvers\\chromedriver(103.0.5060.53).exe";
+		String RutaDriver = "C:\\Rene\\Binarios\\Internet Explorer Driver\\IEDriverServer (x64_4.2.0).exe";
 		String url ="https://www.udemy.com/";
 
 		//  Imstanciando el Driver
