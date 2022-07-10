@@ -1,4 +1,4 @@
-package Test;
+package TestDrivers;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
@@ -16,7 +16,7 @@ public class OpenPhantonJS {
 		
 		driver  = new PhantomJSDriver();
 		
-		System.out.println("Se abrip en navegador");
+		System.out.println("Se abrio en navegador");
 		
 		driver.get("https://www.google.com/");
 		Thread.sleep(5000)	;
