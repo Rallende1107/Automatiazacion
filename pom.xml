@@ -3,46 +3,47 @@
   <groupId>com.Rallende</groupId>
   <artifactId>SeleniumMaven</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
-  
-  
-  
-  
-  
+
+<!-- Propiedades -->
     <properties>
+    <!-- Compiladore para Java 1.8 -->
 	    <maven.compiler.source>1.8</maven.compiler.source>
 	    <maven.compiler.target>1.8</maven.compiler.target>
   	</properties>
   
-  
+<!-- Dependencias -->
   <dependencies>
-  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	  <!-- selenium-java -->
+	  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-java</artifactId>
+		    <version>4.3.0</version>
+		</dependency>
+	<!-- TestNG -->
+	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 	<dependency>
-	    <groupId>org.seleniumhq.selenium</groupId>
-	    <artifactId>selenium-java</artifactId>
-	    <version>4.3.0</version>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>7.6.1</version>
+	    <scope>test</scope>
 	</dependency>
-<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.6.1</version>
-    <scope>test</scope>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-
-<dependency>
-
-    <groupId>com.aventstack</groupId>
-
-    <artifactId>extentreports</artifactId>
-
-    <version>4.1.5</version>
-
-</dependency>
-  
-  
+	
+	<!-- extentreports -->
+	<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+	<dependency>
+	    <groupId>com.aventstack</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>4.1.5</version>
+	</dependency>
+	
+	<!-- phantomjsdriver -->
+	<!-- https://mvnrepository.com/artifact/com.codeborne/phantomjsdriver -->
+	<dependency>
+	    <groupId>com.codeborne</groupId>
+	    <artifactId>phantomjsdriver</artifactId>
+	    <version>1.5.0</version>
+	</dependency>
   </dependencies>
   
 </project>
