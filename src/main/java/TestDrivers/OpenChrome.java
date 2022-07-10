@@ -12,11 +12,10 @@ public class OpenChrome {
 		String RutaDriver = "C:\\Rene\\Binarios\\ChromeDirvers\\chromedriver(103.0.5060.53).exe";
 		String url ="https://www.udemy.com/";
 
-		//  Imstanciando el Driver
+		// Imstanciando el Driver
 		WebDriver driver;
-		
+		// Definiendo el Driver y su ruta para el driver
 		System.setProperty(DriverNavegador, RutaDriver);
-		
 		// Definiendo que Navegador usaremos
 		driver = new ChromeDriver();
 		// Maximizando la vista
